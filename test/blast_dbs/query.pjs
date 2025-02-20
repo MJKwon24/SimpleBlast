@@ -1,0 +1,22 @@
+{
+  "version": "1.2",
+  "dbname": "query",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "uploads/query.fasta",
+  "number-of-letters": 8908091,
+  "number-of-sequences": 6,
+  "last-updated": "2024-12-31T15:57:00",
+  "number-of-volumes": 1,
+  "bytes-total": 8945684,
+  "bytes-to-cache": 8908250,
+  "files": [
+    "query.pdb",
+    "query.phr",
+    "query.pin",
+    "query.pot",
+    "query.psq",
+    "query.ptf",
+    "query.pto"
+  ]
+}

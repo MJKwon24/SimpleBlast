@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleBlast blastp</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .card-header-custom {
+            background-color: #1E3A8A;
+            color: white;
+        }
+        .btn-custom {
+            background-color: #1E3A8A;
+            border-color: #1E3A8A;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #173A6F;
+            border-color: #173A6F;
+        }
+        input[type="file"] {
+            padding: 10px;
+        }
+        #loadingOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        #loadingOverlay span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1E3A8A;
+        }
+        .logo-container {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+        }
+        .logo-container img {
+            width: 100px;
+            height: auto;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+        .logo-container img:hover {
+            opacity: 1;
+        }
+        /* 툴팁 텍스트 왼쪽 정렬 */
+        .tooltip-inner {
+            text-align: left;
+            white-space: pre-wrap; /* 줄 바꿈 허용 */
+        }
+    </style>
+</head>
+<body>
+    <div id="loadingOverlay">
+        <span>
+            <div class="spinner-border text-primary" role="status"></div>
+            Please wait.
+        </span>
+    </div>
+
+    <!-- 상단 바 (Bootstrap 네비게이션 바) -->
+    <nav class="navbar navbar-expand-lg bg-transparent border-bottom shadow-sm">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- 오른쪽 상단에 SimpleBlast 문구 -->
+            <a class="navbar-brand fw-bold fs-3" href="/">SimpleBlast</a>
+
+            <!-- 로고를 오른쪽으로 정렬 -->
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="ms-auto" height="40">
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <h1 class="text-center mb-4">Standard Protein BLAST</h1>
+        <p class="text-center" style="font-size: 1.2rem;">
+            BLASTP search protein databases using a protein query.
+        </p>
+
+        <div class="card shadow-sm mb-4">
+            <div class="card-header card-header-custom">
+                <h2 class="h5 mb-0">blastp</h2>
+            </div>
+            <div class="card-body">
+                <form id="blastForm" method="POST" action="/blast" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="files" class="form-label">
+                            Upload FASTA File(s) for Database
+                            <span class="ms-2" data-bs-toggle="tooltip" title=">Sequence_ID_01
+RSIVNLGTYMKQWLAGTPFVDEHGKLS...
+>Sequence_ID_02
+WTASVDEHYRNLKTPMQDVGSTLAKVR...">
+                                <i class="bi bi-question-circle-fill text-primary" style="cursor: pointer;"></i>
+                            </span>
+                        </label>
+                        <input type="file" id="files" name="files" class="form-control" accept=".fasta,.fa,.fas,.faa" multiple>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="sequence" class="form-label">
+                            Enter Protein Query Sequence
+                        </label>
+                        <textarea name="sequence" id="sequence" rows="5" class="form-control" required>MKTLLIELFRKDIAAKYKELGYQG...</textarea>
+                    </div>
+
+                    <!-- 옵션 설정-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="max_target_seqs" class="form-label">Max Target Sequences</label>
+                                    <span class="ms-2" data-bs-toggle="tooltip" title="검색 결과로 나올 최대 서열 수">
+                                        <i class="bi bi-question-circle-fill text-primary" style="cursor: pointer;"></i>
+                                    </span>
+                                <input type="number" id="max_target_seqs" name="max_target_seqs" class="form-control" value="5" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">                    
+                            <div class="mb-3">
+                                <label for="max_hsps" class="form-label">Max HSPs</label>
+                                <span class="ms-2" data-bs-toggle="tooltip" title="각 대상 서열에서 보고할 최대 HSP 수 (High-scoring Segment Pair)">
+                                    <i class="bi bi-question-circle-fill text-primary" style="cursor: pointer;"></i>
+                                </span>
+                                <input type="number" id="max_hsps" name="max_hsps" class="form-control" value="5" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="word_size" class="form-label">Word Size (Maximum 7)</label>
+                                <span class="ms-2" data-bs-toggle="tooltip" title="BLAST 알고리즘이 사용할 단어 크기 (작을수록 민감도 증가)">
+                                    <i class="bi bi-question-circle-fill text-primary" style="cursor: pointer;"></i>
+                                </span>
+                                <input type="number" id="word_size" name="word_size" class="form-control" value="2" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="evalue" class="form-label">E-value</label>
+                                <span class="ms-2" data-bs-toggle="tooltip" title="유사성 검색의 통계적 유의성 (낮을수록 신뢰도 높음)">
+                                    <i class="bi bi-question-circle-fill text-primary" style="cursor: pointer;"></i>
+                                </span>
+                                <input type="number" step="any" id="evalue" name="evalue" class="form-control" value="1000" required>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <button type="submit" class="btn btn-custom w-100">Run BLAST</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Tooltip 초기화
+        document.addEventListener('DOMContentLoaded', function () {
+            const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+
+        document.getElementById('blastForm').addEventListener('submit', function(event) {
+            const fileInput = document.getElementById('files');
+            const files = fileInput.files;
+
+            // 파일 검증
+            if (files.length < 1) {
+                console.error('No files selected!');
+                event.preventDefault();
+                alert('Please upload at least one FASTA file for the database.');
+                return;
+            }
+
+            // 파일 목록 출력
+            console.log('Files selected:', files);
+
+            // 로딩 화면 표시
+            showLoadingOverlay();
+        });
+
+        // Ctrl+Enter 이벤트 추가
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.key === 'Enter') {
+                event.preventDefault(); // 기본 동작 방지
+                const blastForm = document.getElementById('blastForm');
+                blastForm.requestSubmit(); // 폼 제출 트리거
+            }
+        });
+
+        // 로딩 화면 표시 함수
+        function showLoadingOverlay() {
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            const button = document.querySelector('button[type="submit"]');
+            loadingOverlay.style.display = 'flex';
+            button.disabled = true;
+            button.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Running...';
+        }
+
+        // 예시 텍스트 처리
+        const sequenceInput = document.getElementById('sequence');
+        const placeholderText = "MKTLLIELFRKDIAAKYKELGYQG...";
+
+        sequenceInput.addEventListener('focus', function() {
+            if (sequenceInput.value === placeholderText) {
+                sequenceInput.value = ''; // 커서를 클릭하면 예시가 사라짐
+            }
+        });
+
+        sequenceInput.addEventListener('blur', function() {
+            if (sequenceInput.value.trim() === '') {
+                sequenceInput.value = placeholderText; // 입력하지 않으면 예시가 다시 표시됨
+            }
+        });
+    </script>
+</body>
+</html>

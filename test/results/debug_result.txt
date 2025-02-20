@@ -1,0 +1,5 @@
+# TBLASTN 2.16.0+
+# Query: query
+# Database: /mnt/program/SimpleBlast/test/blast_dbs/merged_db
+# 0 hits found
+# BLAST processed 1 queries

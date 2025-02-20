@@ -1,0 +1,513 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5050
+ * Running on http://192.168.100.18:5050
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 115-707-575
+10.14.76.17 - - [14/Jan/2025 18:45:09] "GET / HTTP/1.1" 200 -
+10.14.76.17 - - [14/Jan/2025 18:45:09] "GET /static/images/logo.png HTTP/1.1" 200 -
+10.14.76.17 - - [14/Jan/2025 18:45:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+
+
+Building a new DB, current time: 01/14/2025 18:45:28
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 7925 sequences in 0.667548 seconds.
+
+
+10.14.76.17 - - [14/Jan/2025 18:45:29] "[32mPOST /blast HTTP/1.1[0m" 302 -
+10.14.76.17 - - [14/Jan/2025 18:45:29] "GET /results/1 HTTP/1.1" 200 -
+
+
+Building a new DB, current time: 01/14/2025 18:45:55
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 7925 sequences in 0.654737 seconds.
+
+
+10.14.76.17 - - [14/Jan/2025 18:45:56] "[32mPOST /blast HTTP/1.1[0m" 302 -
+10.14.76.17 - - [14/Jan/2025 18:45:56] "GET /results/1 HTTP/1.1" 200 -
+
+
+Building a new DB, current time: 01/14/2025 18:46:03
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 7925 sequences in 0.693512 seconds.
+
+
+10.14.76.17 - - [14/Jan/2025 18:46:05] "[32mPOST /blast HTTP/1.1[0m" 302 -
+10.14.76.17 - - [14/Jan/2025 18:46:05] "GET /results/1 HTTP/1.1" 200 -
+
+
+Building a new DB, current time: 01/14/2025 18:47:13
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 7925 sequences in 0.731097 seconds.
+
+
+10.14.76.17 - - [14/Jan/2025 18:47:14] "[32mPOST /blast HTTP/1.1[0m" 302 -
+10.14.76.17 - - [14/Jan/2025 18:47:14] "GET /results/1 HTTP/1.1" 200 -
+
+
+Building a new DB, current time: 01/14/2025 18:49:38
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 7925 sequences in 0.680348 seconds.
+
+
+10.14.73.222 - - [14/Jan/2025 18:49:39] "[32mPOST /blast HTTP/1.1[0m" 302 -
+10.14.73.222 - - [14/Jan/2025 18:49:39] "GET /results/1 HTTP/1.1" 200 -
+
+
+Building a new DB, current time: 01/14/2025 21:58:11
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 7925 sequences in 0.651782 seconds.
+
+
+10.14.76.17 - - [14/Jan/2025 21:58:12] "[32mPOST /blast HTTP/1.1[0m" 302 -
+10.14.76.17 - - [14/Jan/2025 21:58:12] "GET /results/1 HTTP/1.1" 200 -
+
+
+Building a new DB, current time: 01/14/2025 22:09:18
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 7925 sequences in 0.735932 seconds.
+
+
+10.14.76.17 - - [14/Jan/2025 22:09:20] "[32mPOST /blast HTTP/1.1[0m" 302 -
+10.14.76.17 - - [14/Jan/2025 22:09:20] "GET /results/1 HTTP/1.1" 200 -
+
+
+Building a new DB, current time: 01/14/2025 22:09:33
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 7925 sequences in 0.659055 seconds.
+
+
+10.14.76.17 - - [14/Jan/2025 22:09:34] "[32mPOST /blast HTTP/1.1[0m" 302 -
+10.14.76.17 - - [14/Jan/2025 22:09:34] "GET /results/1 HTTP/1.1" 200 -
+
+
+Building a new DB, current time: 01/14/2025 22:10:53
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 7925 sequences in 0.687969 seconds.
+
+
+10.14.76.17 - - [14/Jan/2025 22:10:54] "[32mPOST /blast HTTP/1.1[0m" 302 -
+10.14.76.17 - - [14/Jan/2025 22:10:54] "GET /results/1 HTTP/1.1" 200 -
+
+
+Building a new DB, current time: 01/14/2025 22:11:14
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 7925 sequences in 0.721619 seconds.
+
+
+10.14.76.17 - - [14/Jan/2025 22:11:16] "[32mPOST /blast HTTP/1.1[0m" 302 -
+10.14.76.17 - - [14/Jan/2025 22:11:16] "GET /results/1 HTTP/1.1" 200 -
+
+
+Building a new DB, current time: 01/14/2025 22:19:07
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 7925 sequences in 0.657182 seconds.
+
+
+10.14.76.17 - - [14/Jan/2025 22:19:08] "[32mPOST /blast HTTP/1.1[0m" 302 -
+10.14.76.17 - - [14/Jan/2025 22:19:08] "GET /results/1 HTTP/1.1" 200 -
+
+
+Building a new DB, current time: 01/14/2025 22:19:52
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 7925 sequences in 0.733054 seconds.
+
+
+10.14.76.17 - - [14/Jan/2025 22:19:53] "[32mPOST /blast HTTP/1.1[0m" 302 -
+10.14.76.17 - - [14/Jan/2025 22:19:53] "GET /results/1 HTTP/1.1" 200 -
+
+
+Building a new DB, current time: 01/14/2025 22:20:08
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 7925 sequences in 0.717438 seconds.
+
+
+10.14.76.17 - - [14/Jan/2025 22:20:09] "[32mPOST /blast HTTP/1.1[0m" 302 -
+10.14.76.17 - - [14/Jan/2025 22:20:09] "GET /results/1 HTTP/1.1" 200 -
+
+
+Building a new DB, current time: 01/14/2025 22:20:20
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 7925 sequences in 0.645911 seconds.
+
+
+10.14.76.17 - - [14/Jan/2025 22:20:21] "[32mPOST /blast HTTP/1.1[0m" 302 -
+10.14.76.17 - - [14/Jan/2025 22:20:21] "GET /results/1 HTTP/1.1" 200 -
+
+
+Building a new DB, current time: 01/14/2025 22:20:30
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 7925 sequences in 0.691859 seconds.
+
+
+10.14.76.17 - - [14/Jan/2025 22:20:31] "[32mPOST /blast HTTP/1.1[0m" 302 -
+10.14.76.17 - - [14/Jan/2025 22:20:31] "GET /results/1 HTTP/1.1" 200 -
+
+
+Building a new DB, current time: 01/14/2025 22:20:39
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 7925 sequences in 0.700366 seconds.
+
+
+10.14.76.17 - - [14/Jan/2025 22:20:41] "[32mPOST /blast HTTP/1.1[0m" 302 -
+10.14.76.17 - - [14/Jan/2025 22:20:41] "GET /results/1 HTTP/1.1" 200 -
+
+
+Building a new DB, current time: 01/14/2025 22:21:03
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 7925 sequences in 0.718792 seconds.
+
+
+10.14.76.17 - - [14/Jan/2025 22:21:04] "[32mPOST /blast HTTP/1.1[0m" 302 -
+10.14.76.17 - - [14/Jan/2025 22:21:04] "GET /results/1 HTTP/1.1" 200 -
+10.14.76.17 - - [16/Jan/2025 14:02:19] "GET / HTTP/1.1" 200 -
+10.14.76.17 - - [16/Jan/2025 14:02:19] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+10.14.76.17 - - [16/Jan/2025 14:02:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+
+
+Building a new DB, current time: 01/16/2025 14:02:35
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 7925 sequences in 0.745936 seconds.
+
+
+10.14.76.17 - - [16/Jan/2025 14:02:37] "[32mPOST /blast HTTP/1.1[0m" 302 -
+10.14.76.17 - - [16/Jan/2025 14:02:37] "GET /results/1 HTTP/1.1" 200 -
+10.14.73.222 - - [17/Jan/2025 15:01:31] "GET / HTTP/1.1" 200 -
+10.14.73.222 - - [17/Jan/2025 15:01:31] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+10.14.76.17 - - [17/Jan/2025 15:29:05] "GET / HTTP/1.1" 200 -
+10.14.76.17 - - [17/Jan/2025 15:29:05] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+10.14.76.17 - - [17/Jan/2025 15:29:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+
+
+Building a new DB, current time: 01/17/2025 15:40:44
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 7925 sequences in 0.347909 seconds.
+
+
+10.14.76.17 - - [17/Jan/2025 15:40:45] "[32mPOST /blast HTTP/1.1[0m" 302 -
+10.14.76.17 - - [17/Jan/2025 15:40:45] "GET /results/1 HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5050
+ * Running on http://192.168.100.18:5050
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 118-956-170
+10.14.73.222 - - [24/Jan/2025 10:41:19] "GET / HTTP/1.1" 200 -
+10.14.73.222 - - [24/Jan/2025 10:41:19] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+10.14.73.222 - - [24/Jan/2025 10:41:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+210.115.63.74 - - [24/Jan/2025 10:50:02] "GET / HTTP/1.1" 200 -
+210.115.63.74 - - [24/Jan/2025 10:50:02] "GET /static/images/logo.png HTTP/1.1" 200 -
+210.115.63.74 - - [24/Jan/2025 10:50:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+100.118.186.76 - - [24/Jan/2025 10:54:57] "GET / HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 10:54:57] "GET /static/images/logo.png HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 10:54:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+100.118.186.76 - - [24/Jan/2025 10:55:34] "GET / HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 10:55:34] "GET /static/images/logo.png HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 10:55:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+100.118.186.76 - - [24/Jan/2025 11:01:38] code 400, message Bad request version ('\x8eËµtù\x14ê\x88<ÙJ\x19\x80ô½ý@')
+100.118.186.76 - - [24/Jan/2025 11:01:38] "[31m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03l\x1d$öåô\x88\x19Lµ\x9aeH¯\x7f*]G\x97Â°\x9e9d\x03¶¢ZºI\x0b2 \x8eËµtù\x14ê\x88<ÙJ\x19\x80ô½ý@[0m" 400 -
+100.118.186.76 - - [24/Jan/2025 11:01:38] "GET / HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 11:01:38] "GET /static/images/logo.png HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 11:01:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+
+
+Building a new DB, current time: 01/24/2025 11:08:23
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 1799 sequences in 0.198452 seconds.
+
+
+100.118.186.76 - - [24/Jan/2025 11:08:24] "[32mPOST /blast HTTP/1.1[0m" 302 -
+100.118.186.76 - - [24/Jan/2025 11:08:24] "GET /results/1 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 11:09:07] "GET /results/2 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 11:09:16] "GET /results/3 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 11:09:19] "GET /results/6 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 11:09:29] "GET /results/7 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 11:09:41] "GET /download HTTP/1.1" 200 -
+
+
+Building a new DB, current time: 01/24/2025 11:10:12
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 1799 sequences in 0.186429 seconds.
+
+
+100.118.186.76 - - [24/Jan/2025 11:10:12] "[32mPOST /blast HTTP/1.1[0m" 302 -
+100.118.186.76 - - [24/Jan/2025 11:10:12] "GET /results/1 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 11:10:18] "GET /download HTTP/1.1" 200 -
+
+
+Building a new DB, current time: 01/24/2025 11:10:49
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 1799 sequences in 0.190557 seconds.
+
+
+100.118.186.76 - - [24/Jan/2025 11:10:50] "[32mPOST /blast HTTP/1.1[0m" 302 -
+100.118.186.76 - - [24/Jan/2025 11:10:50] "GET /results/1 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 11:10:52] "GET /download HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 11:14:09] "GET /results/2 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 11:14:12] "GET /results/3 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 11:50:35] "GET / HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 11:50:35] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+
+
+Building a new DB, current time: 01/24/2025 11:50:49
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 1799 sequences in 0.191242 seconds.
+
+
+100.118.186.76 - - [24/Jan/2025 11:50:50] "[32mPOST /blast HTTP/1.1[0m" 302 -
+100.118.186.76 - - [24/Jan/2025 11:50:50] "GET /results/1 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 14:41:44] "GET / HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 14:41:44] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+
+
+Building a new DB, current time: 01/24/2025 14:44:00
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 1799 sequences in 0.202768 seconds.
+
+
+100.118.186.76 - - [24/Jan/2025 14:44:01] "[32mPOST /blast HTTP/1.1[0m" 302 -
+100.118.186.76 - - [24/Jan/2025 14:44:01] "GET /results/1 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:06:35] "GET / HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:06:35] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+
+
+Building a new DB, current time: 01/24/2025 17:07:14
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 1799 sequences in 0.196438 seconds.
+
+
+100.118.186.76 - - [24/Jan/2025 17:07:15] "[32mPOST /blast HTTP/1.1[0m" 302 -
+100.118.186.76 - - [24/Jan/2025 17:07:15] "GET /results/1 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:07:24] "GET /results/2 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:07:27] "GET /results/3 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:07:29] "GET /results/3 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:07:31] "GET /results/4 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:07:33] "GET /results/5 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:07:35] "GET /results/6 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:07:37] "GET /results/7 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:07:39] "GET /results/8 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:09:34] "GET /results/1 HTTP/1.1" 200 -
+
+
+Building a new DB, current time: 01/24/2025 17:11:28
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 1799 sequences in 0.186259 seconds.
+
+
+100.118.186.76 - - [24/Jan/2025 17:11:29] "[32mPOST /blast HTTP/1.1[0m" 302 -
+100.118.186.76 - - [24/Jan/2025 17:11:29] "GET /results/1 HTTP/1.1" 200 -
+
+
+Building a new DB, current time: 01/24/2025 17:13:41
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 1799 sequences in 0.206835 seconds.
+
+
+100.118.186.76 - - [24/Jan/2025 17:13:42] "[32mPOST /blast HTTP/1.1[0m" 302 -
+100.118.186.76 - - [24/Jan/2025 17:13:42] "GET /results/1 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:13:57] "GET /results/2 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:14:00] "GET /results/3 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:14:02] "GET /results/4 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:14:04] "GET /results/5 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:14:06] "GET /results/6 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:14:07] "GET /results/7 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:14:09] "GET /results/8 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:14:11] "GET /results/9 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:14:14] "GET /results/1 HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:16:12] "GET / HTTP/1.1" 200 -
+100.118.186.76 - - [24/Jan/2025 17:16:12] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+
+
+Building a new DB, current time: 01/24/2025 17:16:17
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 1799 sequences in 0.202056 seconds.
+
+
+100.118.186.76 - - [24/Jan/2025 17:16:18] "[32mPOST /blast HTTP/1.1[0m" 302 -
+100.118.186.76 - - [24/Jan/2025 17:16:18] "GET /results/1 HTTP/1.1" 200 -
+
+
+Building a new DB, current time: 01/24/2025 17:17:29
+New DB name:   /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+New DB title:  uploads/merged.fasta
+Sequence type: Protein
+Deleted existing Protein BLAST database named /mnt/program/SimpleBlast/blastp/blast_dbs/merged_db
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 1799 sequences in 0.185464 seconds.
+
+
+100.118.186.76 - - [24/Jan/2025 17:17:30] "[32mPOST /blast HTTP/1.1[0m" 302 -
+100.118.186.76 - - [24/Jan/2025 17:17:30] "GET /results/1 HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5050
+ * Running on http://192.168.100.18:5050
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 174-150-845
+ * Serving Flask app 'app_tbla'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5051
+ * Running on http://192.168.100.18:5051
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 174-150-845
+10.14.73.222 - - [17/Feb/2025 17:46:00] "GET / HTTP/1.1" 200 -
+10.14.73.222 - - [17/Feb/2025 17:46:00] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+10.14.73.222 - - [17/Feb/2025 17:46:01] "GET / HTTP/1.1" 200 -
+10.14.73.222 - - [17/Feb/2025 17:46:01] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -

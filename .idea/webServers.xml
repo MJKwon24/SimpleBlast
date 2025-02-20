@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="887153f7-79d6-4677-bdea-2f535988e875" name="mglab-svr" url="http://10.14.73.41">
+        <fileTransfer accessType="SFTP" host="10.14.73.41" port="33018" sshConfigId="c6562f36-3112-4587-b4f2-3d4f464abddd" sshConfig="root@10.14.73.41:33018 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

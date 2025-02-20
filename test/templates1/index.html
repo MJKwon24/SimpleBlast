@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBLASTN Web Interface</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* TBLASTN 배너 색상 변경 */
+        .card-header-custom {
+            background-color: #1E3A8A; /* 파란색 */
+            color: white; /* 텍스트 색상 */
+        }
+
+        /* BLAST 버튼 색상 변경 */
+        .btn-custom {
+            background-color: #1E3A8A; /* 파란색 */
+            border-color: #1E3A8A; /* 버튼 테두리 색상 */
+            color: white; /* 텍스트 색상 */
+        }
+
+        .btn-custom:hover {
+            background-color: #173A6F; /* 어두운 파란색 */
+            border-color: #173A6F;
+        }
+
+        /* 파일 입력 스타일 */
+        input[type="file"] {
+            padding: 10px;
+        }
+
+        /* 로딩 화면 스타일 */
+        #loadingOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        #loadingOverlay span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1E3A8A;
+        }
+
+        /* 오른쪽 아래 로고 스타일 */
+        .logo-container {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+	    transform: translateX(-50%);
+            z-index: 1000;
+        }
+
+        .logo-container img {
+            width: 100px;
+            height: auto;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .logo-container img:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="loadingOverlay">
+        <span>
+            <div class="spinner-border text-primary" role="status"></div>
+            Please wait.
+        </span>
+    </div>
+
+    <div class="container my-4">
+        <h1 class="text-center mb-4">Translated BLAST: tblastn</h1>
+        <p class="text-center" style="font-size: 1.2rem;">
+            TBLASTN searches translated nucleotide databases using a protein query.
+        </p>
+
+        <!-- BLAST 검색 섹션 -->
+        <div class="card shadow-sm mb-4">
+            <!-- TBLASTN 배너 -->
+            <div class="card-header card-header-custom">
+                <h2 class="h5 mb-0">SimpleBlast</h2>
+            </div>
+            <div class="card-body">
+                <form id="blastForm" method="POST" action="/blast" enctype="multipart/form-data">
+	<!-- 데이터베이스 파일 업로드 -->
+	<div class="mb-3">
+    		<label for="files" class="form-label">
+        		Upload FASTA File for Database
+        		<span class="text-blue-800"
+              		data-bs-toggle="tooltip"
+              		data-bs-placement="right"
+              		title="
+>Sequence_ID
+ATGCGTACGTAGCTAGCTAGCTAGCTAGC...">
+            (<span style="color: blue; text-decoration: underline;">FASTA format</span>)
+        </span>
+    </label>
+    <input type="file" id="files" class="form-control" accept=".fasta,.fa,.txt">
+</div>
+
+                    <!-- 쿼리 서열 입력 -->
+                    <div class="mb-3">
+                        <label for="sequence" class="form-label">
+                            Enter Protein Query Sequence
+                        </label>
+                        <textarea name="sequence" id="sequence" rows="5" class="form-control" 
+				placeholder="MKTLLIELFRKDIAAKYKELGYQG..." required
+              			onfocus="this.placeholder = ''" 
+              			onblur="this.placeholder = 'MKTLLIELFRKDIAAKYKELGYQG...'"></textarea>
+</div>
+
+                    <!-- BLAST 실행 버튼 -->
+                    <button type="submit" class="btn btn-custom w-100">Run BLAST</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 오른쪽 아래 로고 -->
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="KNU Logo">
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Bootstrap Tooltip 초기화
+        const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+
+        // 로딩 화면 표시 및 폼 제출
+        function showLoadingOverlay() {
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            const button = document.querySelector('button[type="submit"]');
+
+            loadingOverlay.style.display = 'flex'; // 로딩 화면 표시
+            button.disabled = true; // 버튼 비활성화
+            button.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Running...';
+        }
+
+        document.getElementById('blastForm').addEventListener('submit', function(event) {
+            showLoadingOverlay();
+        });
+
+        // Ctrl+Enter 단축키로 폼 제출
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.key === 'Enter') {
+                event.preventDefault(); // 기본 동작 방지
+                const form = document.getElementById('blastForm');
+                showLoadingOverlay();
+                form.submit();
+            }
+        });
+    </script>
+</body>
+</html>
